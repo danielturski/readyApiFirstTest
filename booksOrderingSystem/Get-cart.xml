@@ -22,6 +22,7 @@
       <con:request/>
       <con:originalUri>http://localhost/cart;BooksId=1%2C2%2C3%2C4</con:originalUri>
       <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
         <con:authType>No Authorization</con:authType>
       </con:credentials>
       <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
@@ -40,6 +41,7 @@
       <con:request/>
       <con:originalUri>http://localhost/cart;BooksId=1%2C2%2C3%2C4</con:originalUri>
       <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
         <con:authType>No Authorization</con:authType>
       </con:credentials>
       <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
