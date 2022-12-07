@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="Get all books" path="/books" id="dc7d615f-add0-4f7a-8eee-7129f6392dd0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="dc7d615f-add0-4f7a-8eee-7129f6392dd0fileName">Get-all-books</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="Request for books" id="c4e794e9-6f04-4a2b-9d21-431d7732e6d6" method="GET">
+    <con:settings/>
+    <con:parameters/>
+    <con:request name="Get all books" id="20227f12-065d-4c18-beb3-525c79e3999a" mediaType="application/json">
+      <con:settings>
+        <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+      </con:settings>
+      <con:endpoint>http://localhost:4321/</con:endpoint>
+      <con:request/>
+      <con:originalUri>http://localhost/books</con:originalUri>
+      <con:credentials>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+</con:resource>

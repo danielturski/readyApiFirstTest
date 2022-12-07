@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="Get cart" path="/cart" id="818ca44d-82a0-4b0c-a845-0dc40e5146f3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="818ca44d-82a0-4b0c-a845-0dc40e5146f3fileName">Get-cart</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="Method 1" id="af86457f-f742-43df-966e-81494470477b" method="GET">
+    <con:settings/>
+    <con:parameters>
+      <con:parameter required="true">
+        <con:name>cartId</con:name>
+        <con:value/>
+        <con:style>QUERY</con:style>
+        <con:default/>
+      </con:parameter>
+    </con:parameters>
+    <con:request name="Get cart for 1,2,3,4" id="1180e82b-23e3-4013-8da0-8cd286b81a0c" mediaType="application/json">
+      <con:settings>
+        <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+      </con:settings>
+      <con:endpoint>http://localhost:4321/</con:endpoint>
+      <con:request/>
+      <con:originalUri>http://localhost/cart;BooksId=1%2C2%2C3%2C4</con:originalUri>
+      <con:credentials>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters>
+        <con:entry key="cartId" value="739123"/>
+      </con:parameters>
+      <con:parameterOrder>
+        <con:entry>cartId</con:entry>
+      </con:parameterOrder>
+    </con:request>
+    <con:request name="Get cart for 3,7" id="1180e82b-23e3-4013-8da0-8cd286b81a0c" mediaType="application/json">
+      <con:settings>
+        <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+      </con:settings>
+      <con:endpoint>http://localhost:4321/</con:endpoint>
+      <con:request/>
+      <con:originalUri>http://localhost/cart;BooksId=1%2C2%2C3%2C4</con:originalUri>
+      <con:credentials>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters>
+        <con:entry key="cartId" value="11412"/>
+      </con:parameters>
+      <con:parameterOrder>
+        <con:entry>cartId</con:entry>
+      </con:parameterOrder>
+    </con:request>
+  </con:method>
+</con:resource>

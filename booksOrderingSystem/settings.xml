@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:interface xsi:type="con:RestService" id="42c7677e-1c06-4188-af28-bb09bd63c99d" name="booksOrderingSystem" type="rest_ex" wadlVersion="https://swagger.io/openapiv3/specification" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="42c7677e-1c06-4188-af28-bb09bd63c99dfileName">booksOrderingSystem</con:setting>
+  </con:settings>
+  <con:definitionCache type="TEXT" rootPart="/status.json">
+    <con:part>
+      <con:url>/status.json</con:url>
+      <con:content>{"openapi":"3.0.1","info":{"title":"/status","version":"1.0.0"},"servers":[{"url":"/"}],"paths":{"/books":{"get":{"responses":{"default":{"description":"Default response"}}}},"/book":{"get":{"parameters":[{"name":"bookId","in":"query","required":true,"style":"form","explode":true,"schema":{"type":"string"}}],"responses":{"default":{"description":"Default response"}}}},"/addBooksToCart":{"post":{"requestBody":{"content":{"application/json":{}}},"responses":{"default":{"description":"Default response"}}}},"/cart":{"description":"","get":{"description":"","parameters":[{"name":"BooksId","in":"cookie","required":true,"schema":{"type":"string"}}],"responses":{"default":{"description":"Default response"}}}}}}</con:content>
+      <con:type>https://swagger.io/openapiv3/specification</con:type>
+    </con:part>
+  </con:definitionCache>
+  <con:endpoints>
+    <con:endpoint>http://localhost:1209/</con:endpoint>
+    <con:endpoint>http://localhost:4321/</con:endpoint>
+    <con:endpoint>http://localhost:8088/</con:endpoint>
+    <con:endpoint>https://simple-books-api.glitch.me</con:endpoint>
+  </con:endpoints>
+</con:interface>

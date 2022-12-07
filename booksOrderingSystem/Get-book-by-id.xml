@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="Get book by id" path="/book" id="80ab456d-9e8d-4f63-aa50-4b2180fb77b9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="80ab456d-9e8d-4f63-aa50-4b2180fb77b9fileName">Get-book-by-id</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="Get book" id="d4375df8-7c52-4b5a-9e17-21de89d5e816" method="GET">
+    <con:settings/>
+    <con:parameters>
+      <con:parameter required="true">
+        <con:name>bookId</con:name>
+        <con:value/>
+        <con:style>QUERY</con:style>
+        <con:default/>
+      </con:parameter>
+    </con:parameters>
+    <con:request name="Get book id 1" id="6b8f0f17-7977-4714-998a-9454a564a0c3" mediaType="application/json">
+      <con:settings>
+        <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+      </con:settings>
+      <con:endpoint>http://localhost:4321/</con:endpoint>
+      <con:request/>
+      <con:originalUri>http://localhost/book</con:originalUri>
+      <con:credentials>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters>
+        <con:entry key="bookId" value="1"/>
+      </con:parameters>
+      <con:parameterOrder>
+        <con:entry>bookId</con:entry>
+      </con:parameterOrder>
+    </con:request>
+    <con:request name="Get book id 7" id="fb1d8e89-460d-46be-b8cd-ed76dfdaf926" mediaType="application/json">
+      <con:settings>
+        <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+      </con:settings>
+      <con:endpoint>http://localhost:4321/</con:endpoint>
+      <con:request/>
+      <con:originalUri>http://localhost/book</con:originalUri>
+      <con:credentials>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters>
+        <con:entry key="bookId" value="7"/>
+      </con:parameters>
+    </con:request>
+    <con:request name="Get book id 8" id="d8aa3bdf-57e0-4778-9593-ee180210f00a" mediaType="application/json">
+      <con:settings>
+        <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+      </con:settings>
+      <con:endpoint>http://localhost:4321/</con:endpoint>
+      <con:request/>
+      <con:originalUri>http://localhost/book</con:originalUri>
+      <con:credentials>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters>
+        <con:entry key="bookId" value="8"/>
+      </con:parameters>
+    </con:request>
+  </con:method>
+</con:resource>

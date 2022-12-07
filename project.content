@@ -1,0 +1,11 @@
+booksOrderingSystem\Get-all-books.xml
+booksOrderingSystem\Get-book-by-id.xml
+booksOrderingSystem\Add-books-to-cart.xml
+booksOrderingSystem\Get-cart.xml
+Test-Suite-1\Test-Case-1.xml
+Test-Suite-1\Test-Case-2.xml
+Test-Suite-1\Test-Case-3.xml
+booksOrderingSystem-Virtual-Service\%2Fbooks.xml
+booksOrderingSystem-Virtual-Service\%2Fbook.xml
+booksOrderingSystem-Virtual-Service\%2FaddBooksToCart.xml
+booksOrderingSystem-Virtual-Service\%2Fcart.xml

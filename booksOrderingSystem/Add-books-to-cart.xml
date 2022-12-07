@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="Add books to cart" path="/addBooksToCart" id="5bbb366a-ed19-451f-85cc-c333cf4b945e" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="5bbb366a-ed19-451f-85cc-c333cf4b945efileName">Add-books-to-cart</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="Add books to cart" id="6a1f2017-0404-4cd7-80cc-f08c6d1af1d4" method="POST">
+    <con:settings/>
+    <con:parameters/>
+    <con:request name="Add books to cart 1,2,3,4" id="6bd95a56-3d62-4193-b936-c8df8fa85c81" mediaType="application/json" postQueryString="false">
+      <con:settings>
+        <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+      </con:settings>
+      <con:endpoint>http://localhost:4321/</con:endpoint>
+      <con:request>{
+       "booksId": [1,2,3,4]
+}</con:request>
+      <con:originalUri>http://localhost/addBooksToCart</con:originalUri>
+      <con:credentials>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters/>
+      <con:parameterOrder/>
+    </con:request>
+  </con:method>
+</con:resource>
